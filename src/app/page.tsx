@@ -43,8 +43,7 @@ export default function Home() {
             description:
               "Moving tote rental service in Coeur d'Alene, Idaho. Industrial-strength totes delivered to your door.",
             url: "https://totemovers.com",
-            telephone: "(208) 555-1234",
-            email: "info@totemovers.com",
+            telephone: "(208) 771-2037",
             address: {
               "@type": "PostalAddress",
               addressLocality: "Coeur d'Alene",
