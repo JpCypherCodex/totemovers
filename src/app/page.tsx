@@ -1,65 +1,111 @@
-import Image from "next/image";
+import Hero from "@/components/Hero";
+import WhyRent from "@/components/WhyRent";
+import Pricing from "@/components/Pricing";
+import HowItWorks from "@/components/HowItWorks";
+import Testimonials from "@/components/Testimonials";
+import FAQ from "@/components/FAQ";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <>
+      <Hero />
+      <WhyRent />
+      <Pricing />
+      <HowItWorks />
+      <Testimonials />
+      <FAQ />
+
+      {/* CTA Banner */}
+      <section className="bg-primary py-14 text-center text-white">
+        <div className="mx-auto max-w-3xl px-4">
+          <h2 className="text-3xl font-bold sm:text-4xl">Ready to Ditch the Cardboard?</h2>
+          <p className="mt-3 text-lg text-white/80">
+            Reserve your totes today and make your next move the easiest one yet.
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/booking"
+            className="mt-6 inline-flex items-center justify-center rounded-full bg-secondary px-10 py-3.5 text-base font-semibold text-white shadow-lg transition-all hover:bg-secondary-dark"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+            Book Now
+          </Link>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* Schema.org structured data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            name: "Tote Movers",
+            description:
+              "Moving tote rental service in Coeur d'Alene, Idaho. Industrial-strength totes delivered to your door.",
+            url: "https://totemovers.com",
+            telephone: "(208) 555-1234",
+            email: "info@totemovers.com",
+            address: {
+              "@type": "PostalAddress",
+              addressLocality: "Coeur d'Alene",
+              addressRegion: "ID",
+              addressCountry: "US",
+            },
+            areaServed: [
+              "Coeur d'Alene",
+              "Post Falls",
+              "Hayden",
+              "Rathdrum",
+              "Dalton Gardens",
+              "Spirit Lake",
+            ],
+            priceRange: "$99 - $339",
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "What areas do you deliver to?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "We deliver throughout the greater Coeur d'Alene area, including Post Falls, Hayden, Rathdrum, Dalton Gardens, Spirit Lake, and surrounding communities.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Do I need to clean the totes before pickup?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Just make sure the totes are empty — we handle the cleaning.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Can I order additional totes if I run out?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Absolutely! Additional totes are available at a prorated price, usually delivered within 24 hours.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How does pricing work?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Our pricing is all-inclusive — delivery, totes, a free moving dolly, and pickup with no hidden fees.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
+    </>
   );
 }
