@@ -37,7 +37,7 @@ export default function WhyRent() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Why Rent Moving Totes?
+            No Tape. No Stress.
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-lg text-gray-mid">
             Ditch the cardboard. Our reusable totes make moving faster, easier, and greener.

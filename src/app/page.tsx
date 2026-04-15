@@ -19,9 +19,9 @@ export default function Home() {
       {/* CTA Banner */}
       <section className="bg-primary py-14 text-center text-white">
         <div className="mx-auto max-w-3xl px-4">
-          <h2 className="text-3xl font-bold sm:text-4xl">Ready to Ditch the Cardboard?</h2>
+          <h2 className="text-3xl font-bold sm:text-4xl">Ditch the Boxes.</h2>
           <p className="mt-3 text-lg text-white/80">
-            Reserve your totes today and make your next move the easiest one yet.
+            Moving made easy. Reserve your totes today and see the difference.
           </p>
           <Link
             href="/booking"
