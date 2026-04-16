@@ -12,7 +12,7 @@ export default function Header() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
-          <Image src="/logo.png" alt="Tote Movers - Moving Made Easy" width={400} height={100} className="h-16 w-auto sm:h-20" priority />
+          <Image src="/logo.png" alt="Tote Movers - Moving Made Easy" width={460} height={200} className="h-14 w-auto sm:h-20" priority />
         </Link>
 
         {/* Desktop Nav */}
