@@ -1,36 +1,75 @@
 import { NextResponse } from "next/server";
+import { Resend } from "resend";
+
+const NOTIFY_EMAIL = process.env.NOTIFY_EMAIL || "hello@totemovers.com";
+
+function getResend() {
+  if (!process.env.RESEND_API_KEY) {
+    throw new Error("RESEND_API_KEY is not configured");
+  }
+  return new Resend(process.env.RESEND_API_KEY);
+}
 
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { name, email, phone, package: pkg, deliveryDate, address, city, notes } = body;
+    const {
+      name,
+      email,
+      phone,
+      package: pkg,
+      deliveryDate,
+      address,
+      city,
+      notes,
+    } = body;
 
     if (!name || !email || !phone || !pkg || !deliveryDate || !address || !city) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
     }
 
-    // Log to console for now — replace with email service later
-    console.log("=== NEW BOOKING RESERVATION ===");
-    console.log(`Package: ${pkg}`);
-    console.log(`Delivery Date: ${deliveryDate}`);
-    console.log(`Address: ${address}, ${city}`);
-    console.log(`Name: ${name}`);
-    console.log(`Email: ${email}`);
-    console.log(`Phone: ${phone}`);
-    console.log(`Notes: ${notes || "None"}`);
-    console.log("================================");
+    // Send email notification
+    const resend = getResend();
+    await resend.emails.send({
+      from: "Tote Movers Booking <onboarding@resend.dev>",
+      to: NOTIFY_EMAIL,
+      subject: `New Booking: ${pkg} — ${name}`,
+      html: `
+        <h2>New Tote Reservation</h2>
+        <table style="border-collapse:collapse;width:100%;max-width:600px;">
+          <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold;">Package</td><td style="padding:8px;border:1px solid #ddd;">${pkg}</td></tr>
+          <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold;">Delivery Date</td><td style="padding:8px;border:1px solid #ddd;">${deliveryDate}</td></tr>
+          <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold;">Address</td><td style="padding:8px;border:1px solid #ddd;">${address}, ${city}</td></tr>
+          <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold;">Name</td><td style="padding:8px;border:1px solid #ddd;">${name}</td></tr>
+          <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold;">Email</td><td style="padding:8px;border:1px solid #ddd;"><a href="mailto:${email}">${email}</a></td></tr>
+          <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold;">Phone</td><td style="padding:8px;border:1px solid #ddd;"><a href="tel:${phone}">${phone}</a></td></tr>
+          <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold;">Notes</td><td style="padding:8px;border:1px solid #ddd;">${notes || "None"}</td></tr>
+        </table>
+      `,
+    });
 
-    // TODO: Integrate email service here
-    // Example with Resend:
-    // await resend.emails.send({
-    //   from: 'Tote Movers <noreply@totemovers.com>',
-    //   to: 'info@totemovers.com',
-    //   subject: `New Booking: ${pkg} - ${name}`,
-    //   text: `Package: ${pkg}\nDelivery Date: ${deliveryDate}\nAddress: ${address}, ${city}\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nNotes: ${notes || 'None'}`,
-    // });
+    // Also log to Google Sheets if configured
+    if (process.env.GOOGLE_SHEETS_WEBHOOK) {
+      await fetch(process.env.GOOGLE_SHEETS_WEBHOOK, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          timestamp: new Date().toISOString(),
+          type: "booking",
+          package: pkg,
+          deliveryDate,
+          address: `${address}, ${city}`,
+          name,
+          email,
+          phone,
+          notes: notes || "",
+        }),
+      }).catch(() => {});
+    }
 
     return NextResponse.json({ success: true });
-  } catch {
+  } catch (error) {
+    console.error("Booking form error:", error);
     return NextResponse.json({ error: "Internal server error" }, { status: 500 });
   }
 }
