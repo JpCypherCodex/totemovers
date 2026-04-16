@@ -8,7 +8,9 @@ export default function Footer() {
         <div className="grid gap-8 md:grid-cols-3">
           {/* Brand */}
           <div>
-            <Image src="/logo.png" alt="Tote Movers - Moving Made Easy" width={200} height={50} className="h-10 w-auto brightness-0 invert" />
+                        <div className="inline-block rounded-lg bg-white p-3">
+              <Image src="/logo.png" alt="Tote Movers - Moving Made Easy" width={200} height={50} className="h-10 w-auto" />
+            </div>
             <p className="mt-3 text-sm leading-relaxed">
               Coeur d&apos;Alene&apos;s premier moving tote rental service. Industrial-strength totes
               delivered to your door and picked up when you&apos;re done.
