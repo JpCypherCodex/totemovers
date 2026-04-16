@@ -18,12 +18,12 @@ export default function AboutPage() {
             src="/family.jpg"
             alt="The family behind Tote Movers"
             fill
-            className="object-cover object-top"
+            className="object-cover object-center"
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-gray-900/40 to-gray-900/20" />
         </div>
-        <div className="relative mx-auto max-w-4xl px-4 py-32 text-center sm:py-44">
+        <div className="relative mx-auto max-w-4xl px-4 py-40 text-center sm:py-52">
           <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
             We Get It.
           </h1>
@@ -57,8 +57,26 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Moving Photos Section */}
+      {/* Home Photo */}
       <section className="bg-gray-light py-16 sm:py-20">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6">
+          <div className="overflow-hidden rounded-2xl shadow-lg">
+            <Image
+              src="/home.jpg"
+              alt="The Cypher family settling into their home in Post Falls, Idaho"
+              width={800}
+              height={530}
+              className="w-full object-cover"
+            />
+          </div>
+          <p className="mt-4 text-center text-sm text-gray-mid italic">
+            The Cypher family — rooted in North Idaho since 2016. (After a few moves to get here.)
+          </p>
+        </div>
+      </section>
+
+      {/* Moving Photos */}
+      <section className="py-16 sm:py-20">
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
           <div className="grid gap-6 md:grid-cols-2">
             <div className="overflow-hidden rounded-2xl">
@@ -80,6 +98,9 @@ export default function AboutPage() {
               />
             </div>
           </div>
+          <p className="mt-4 text-center text-sm text-gray-mid italic">
+            Our kids on moving day — they&apos;ve gotten pretty good at this by now.
+          </p>
         </div>
       </section>
 
