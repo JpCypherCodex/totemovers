@@ -21,7 +21,7 @@ export async function POST(request: Request) {
 
     // Send email notification
     const resend = getResend();
-    await resend.emails.send({
+    const result = await resend.emails.send({
       from: "Tote Movers Contact <onboarding@resend.dev>",
       to: NOTIFY_EMAIL,
       replyTo: email,
@@ -38,25 +38,13 @@ export async function POST(request: Request) {
       `,
     });
 
-    // Also log to Google Sheets if configured
-    if (process.env.GOOGLE_SHEETS_WEBHOOK) {
-      await fetch(process.env.GOOGLE_SHEETS_WEBHOOK, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          timestamp: new Date().toISOString(),
-          type: "contact",
-          name,
-          email,
-          phone: phone || "",
-          message,
-        }),
-      }).catch(() => {});
+    if (result.error) {
+      return NextResponse.json({ error: result.error.message, detail: result.error }, { status: 500 });
     }
 
-    return NextResponse.json({ success: true });
+    return NextResponse.json({ success: true, emailId: result.data?.id });
   } catch (error) {
-    console.error("Contact form error:", error);
-    return NextResponse.json({ error: "Internal server error" }, { status: 500 });
+    const msg = error instanceof Error ? error.message : String(error);
+    return NextResponse.json({ error: msg }, { status: 500 });
   }
 }
