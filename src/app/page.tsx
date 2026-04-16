@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import WhyRent from "@/components/WhyRent";
+import WhoWeServe from "@/components/WhoWeServe";
 import Pricing from "@/components/Pricing";
 import HowItWorks from "@/components/HowItWorks";
 import Testimonials from "@/components/Testimonials";
@@ -11,6 +12,7 @@ export default function Home() {
     <>
       <Hero />
       <WhyRent />
+      <WhoWeServe />
       <Pricing />
       <HowItWorks />
       <Testimonials />

@@ -23,6 +23,9 @@ export default function Header() {
           <Link href="/about" className="text-sm font-medium text-gray-700 transition-colors hover:text-primary">
             About Us
           </Link>
+          <Link href="/blog" className="text-sm font-medium text-gray-700 transition-colors hover:text-primary">
+            Blog
+          </Link>
           <Link href="/contact" className="text-sm font-medium text-gray-700 transition-colors hover:text-primary">
             Contact
           </Link>
@@ -61,6 +64,9 @@ export default function Header() {
             </Link>
             <Link href="/about" className="text-sm font-medium text-gray-700" onClick={() => setMobileOpen(false)}>
               About Us
+            </Link>
+            <Link href="/blog" className="text-sm font-medium text-gray-700" onClick={() => setMobileOpen(false)}>
+              Blog
             </Link>
             <Link href="/contact" className="text-sm font-medium text-gray-700" onClick={() => setMobileOpen(false)}>
               Contact
