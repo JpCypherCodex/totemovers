@@ -5,12 +5,12 @@ import { useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 
 const packages = [
-  { name: "Studio", price: 99, totes: 20 },
-  { name: "1-Bedroom", price: 119, totes: 30 },
-  { name: "2-Bedroom", price: 149, totes: 40 },
-  { name: "3-Bedroom", price: 189, totes: 55 },
-  { name: "4-Bedroom", price: 249, totes: 75 },
-  { name: "5-Bedroom", price: 339, totes: 100 },
+  { name: "Studio", price: 119, totes: 20 },
+  { name: "1-Bedroom", price: 145, totes: 30 },
+  { name: "2-Bedroom", price: 179, totes: 40 },
+  { name: "3-Bedroom", price: 229, totes: 55 },
+  { name: "4-Bedroom", price: 299, totes: 75 },
+  { name: "5-Bedroom", price: 399, totes: 100 },
 ];
 
 function BookingForm() {

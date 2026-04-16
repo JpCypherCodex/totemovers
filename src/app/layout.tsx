@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: "%s | Tote Movers",
   },
   description:
-    "Rent industrial-strength moving totes in Coeur d'Alene, ID. Delivered to your door with a free dolly. Stronger than cardboard, eco-friendly, and hassle-free. Starting at $99.",
+    "Rent industrial-strength moving totes in Coeur d'Alene, ID. Delivered to your door with a free dolly. Stronger than cardboard, eco-friendly, and hassle-free. Starting at $119.",
   keywords: [
     "moving totes",
     "tote rental",

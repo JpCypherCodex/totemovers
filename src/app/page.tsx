@@ -58,7 +58,7 @@ export default function Home() {
               "Dalton Gardens",
               "Spirit Lake",
             ],
-            priceRange: "$99 - $339",
+            priceRange: "$119 - $399",
           }),
         }}
       />
