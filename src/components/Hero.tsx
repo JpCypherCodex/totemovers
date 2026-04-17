@@ -19,14 +19,14 @@ export default function Hero() {
       <div className="relative mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8 lg:py-40">
         <div className="max-w-2xl">
           <p className="inline-block rounded-full bg-secondary/90 px-4 py-1.5 text-sm font-semibold uppercase tracking-wide text-white">
-            Move Smarter.
+            Become a Tote Mover
           </p>
           <h1 className="mt-4 text-4xl font-extrabold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
             Skip the Cardboard&nbsp;Chaos
           </h1>
           <p className="mt-4 text-lg text-white/80 sm:text-xl">
-            Rent industrial-strength moving totes in Coeur d&apos;Alene.
-            Delivered to your door, picked up when you&apos;re done.
+            Be a tote mover, not a box mover. Rent industrial-strength moving totes in
+            Coeur d&apos;Alene — delivered to your door, picked up when you&apos;re done.
           </p>
 
           <ul className="mt-6 space-y-3 text-base text-white sm:text-lg">

@@ -163,6 +163,51 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* What's a Tote Mover */}
+      <section className="bg-primary py-16 text-white sm:py-20">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6">
+          <p className="inline-block rounded-full bg-secondary px-4 py-1.5 text-sm font-semibold uppercase tracking-wide">
+            Join the Movement
+          </p>
+          <h2 className="mt-4 text-3xl font-bold sm:text-4xl">
+            What&apos;s a Tote Mover?
+          </h2>
+          <div className="mt-6 space-y-5 text-lg leading-relaxed text-white/90">
+            <p>
+              A <strong className="text-white">Tote Mover</strong> is someone who&apos;s done with
+              the old way. They&apos;re the kind of person who refuses to spend a Saturday
+              scavenging for boxes at the liquor store. Who stopped believing that a move
+              has to end with a garage full of flattened cardboard and a headache.
+            </p>
+            <p>
+              A Tote Mover packs smarter. They load a dolly, not a landfill. They show up at
+              their new home with everything intact, their back unstrained, and their weekend
+              mostly still theirs.
+            </p>
+            <p className="text-xl font-semibold text-white">
+              So the question is simple:
+            </p>
+            <p className="text-2xl font-bold text-secondary sm:text-3xl">
+              Are you a regular mover, or a Tote Mover?
+            </p>
+            <p className="text-white/90">
+              Every family we deliver to in CdA joins a quiet little movement of people who
+              figured out there&apos;s a better way. It&apos;s not fancy. It&apos;s not complicated. It&apos;s
+              just smarter.
+            </p>
+          </div>
+
+          <div className="mt-10">
+            <Link
+              href="/booking"
+              className="inline-flex items-center justify-center rounded-full bg-secondary px-8 py-3.5 text-base font-semibold text-white shadow-lg transition-all hover:bg-secondary-dark"
+            >
+              Become a Tote Mover
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Values */}
       <section className="py-16 sm:py-20">
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
