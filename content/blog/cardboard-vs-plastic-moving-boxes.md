@@ -30,7 +30,7 @@ Let's break it down for an average 3-bedroom home (roughly 55 boxes needed):
 
 ### Plastic Tote Rental
 
-- MoverTotes 3-Bedroom Package (55 totes): **$229**
+- Tote Movers 3-Bedroom Package (55 totes): **$229**
 - Dolly: **Included**
 - Delivery: **Included**
 - Pickup: **Included**
@@ -80,4 +80,4 @@ For an average 3-bedroom move in Coeur d'Alene:
 - **Cardboard total cost:** ~$270 + hours of sourcing + cleanup
 - **Tote rental total cost:** $229 + zero effort
 
-[See MoverTotes packages →](/booking)
+[See Tote Movers packages →](/booking)

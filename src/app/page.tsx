@@ -41,12 +41,12 @@ export default function Home() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            name: "MoverTotes",
+            name: "Tote Movers",
             description:
               "Moving tote rental service in Coeur d'Alene, Idaho. Industrial-strength totes delivered to your door.",
-            url: "https://movertotes.com",
+            url: "https://totemovers.com",
             telephone: "(208) 771-2037",
-            email: "hello@movertotes.com",
+            email: "hello@totemovers.com",
             address: {
               "@type": "PostalAddress",
               addressLocality: "Coeur d'Alene",

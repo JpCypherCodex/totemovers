@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Meet the family behind MoverTotes. After 11 moves in the CdA area, Josh built the moving solution he wished he'd always had.",
+    "Meet the family behind Tote Movers. After 11 moves in the CdA area, Josh built the moving solution he wished he'd always had.",
 };
 
 export default function AboutPage() {
@@ -16,7 +16,7 @@ export default function AboutPage() {
         <div className="absolute inset-0">
           <Image
             src="/family.jpg"
-            alt="The family behind MoverTotes"
+            alt="The family behind Tote Movers"
             fill
             className="object-cover object-center"
             priority
@@ -143,7 +143,7 @@ export default function AboutPage() {
           </h2>
           <div className="mt-8 space-y-5 text-lg text-gray-700 leading-relaxed">
             <p>
-              MoverTotes is the moving solution I wished I&apos;d had for all eleven of those
+              Tote Movers is the moving solution I wished I&apos;d had for all eleven of those
               moves. Industrial-strength totes that stack perfectly, hold up to 65 pounds,
               and don&apos;t need a single piece of tape. We deliver them to your door. You pack.
               You move. You unpack. And then we come pick them all up.
@@ -171,7 +171,7 @@ export default function AboutPage() {
             {[
               {
                 title: "Local to the Core",
-                desc: "We live here. We move here. We're raising our family here. When you rent from MoverTotes, you're supporting a CdA family who actually gets what moving around this area is like.",
+                desc: "We live here. We move here. We're raising our family here. When you rent from Tote Movers, you're supporting a CdA family who actually gets what moving around this area is like.",
               },
               {
                 title: "No More Waste",
