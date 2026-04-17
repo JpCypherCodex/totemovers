@@ -17,8 +17,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Tote Movers | Moving Tote Rentals in Coeur d'Alene, Idaho",
-    template: "%s | Tote Movers",
+    default: "MoverTotes | Moving Tote Rentals in Coeur d'Alene, Idaho",
+    template: "%s | MoverTotes",
   },
   description:
     "Rent industrial-strength moving totes in Coeur d'Alene, ID. Delivered to your door with a free dolly. Stronger than cardboard, eco-friendly, and hassle-free. Starting at $119.",
@@ -32,13 +32,13 @@ export const metadata: Metadata = {
     "reusable moving boxes",
     "North Idaho moving",
   ],
-  metadataBase: new URL("https://totemovers.com"),
+  metadataBase: new URL("https://movertotes.com"),
   openGraph: {
-    title: "Tote Movers | Moving Tote Rentals in Coeur d'Alene, Idaho",
+    title: "MoverTotes | Moving Tote Rentals in Coeur d'Alene, Idaho",
     description:
       "Skip the cardboard chaos. Rent industrial-strength moving totes delivered to your door in CdA.",
-    url: "https://totemovers.com",
-    siteName: "Tote Movers",
+    url: "https://movertotes.com",
+    siteName: "MoverTotes",
     locale: "en_US",
     type: "website",
   },

@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="absolute inset-0">
         <Image
           src="/hero.jpg"
-          alt="Family moving with Tote Movers totes"
+          alt="Family moving with MoverTotes totes"
           fill
           className="object-cover"
           priority

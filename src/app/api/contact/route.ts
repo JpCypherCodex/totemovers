@@ -22,7 +22,7 @@ export async function POST(request: Request) {
     // Send email notification
     const resend = getResend();
     const result = await resend.emails.send({
-      from: "Tote Movers Contact <noreply@totemovers.com>",
+      from: "MoverTotes Contact <noreply@totemovers.com>",
       to: NOTIFY_EMAIL,
       replyTo: email,
       subject: `Contact Form: ${name}`,

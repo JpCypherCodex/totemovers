@@ -23,7 +23,7 @@ The closing gift arrives at the new house, gets unpacked eventually, and goes on
 
 Imagine this instead:
 
-Two weeks before closing, your client gets a call from Tote Movers. "Hi! Your realtor wanted to make your move easier — they've gifted you a full package of our moving totes. When would you like them delivered?"
+Two weeks before closing, your client gets a call from MoverTotes. "Hi! Your realtor wanted to make your move easier — they've gifted you a full package of our moving totes. When would you like them delivered?"
 
 That's a gift that hits at exactly the right moment, solving exactly the right problem, and you're the hero of the entire story.
 
@@ -61,7 +61,7 @@ Or — even better — ask us about our **bulk realtor program**. If you close m
 
 Closing gifts up to **$25 per client** are fully tax-deductible. Going above that (as most realtors do) is still a legitimate business expense. Talk to your accountant, but closing gifts are typically a smart marketing write-off.
 
-## How to Gift Tote Movers to Your Client
+## How to Gift MoverTotes to Your Client
 
 1. [Contact us](/contact) to set up a realtor account
 2. Tell us the package size and delivery date

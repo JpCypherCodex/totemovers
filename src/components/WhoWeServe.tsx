@@ -74,7 +74,7 @@ export default function WhoWeServe() {
             Who We Serve
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-lg text-gray-mid">
-            Tote Movers isn&apos;t just for families. If you&apos;re moving something in CdA, we&apos;ve got you covered.
+            MoverTotes isn&apos;t just for families. If you&apos;re moving something in CdA, we&apos;ve got you covered.
           </p>
         </div>
 

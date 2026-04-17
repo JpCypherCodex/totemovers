@@ -9,7 +9,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
                         <div className="inline-block rounded-lg bg-white p-3">
-              <Image src="/logo.png" alt="Tote Movers - Moving Made Easy" width={280} height={120} className="h-14 w-auto" />
+              <Image src="/logo.png" alt="MoverTotes - Moving Made Easy" width={280} height={120} className="h-14 w-auto" />
             </div>
             <p className="mt-3 text-sm leading-relaxed">
               Coeur d&apos;Alene&apos;s premier moving tote rental service. Industrial-strength totes
@@ -66,7 +66,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 border-t border-gray-700 pt-6 text-center text-xs text-gray-500">
-          <p>&copy; {new Date().getFullYear()} Tote Movers. All rights reserved. Proudly serving Coeur d&apos;Alene and North Idaho.</p>
+          <p>&copy; {new Date().getFullYear()} MoverTotes. All rights reserved. Proudly serving Coeur d&apos;Alene and North Idaho.</p>
         </div>
       </div>
     </footer>

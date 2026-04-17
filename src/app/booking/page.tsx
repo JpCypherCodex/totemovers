@@ -59,7 +59,7 @@ function BookingForm() {
         </svg>
         <h2 className="mt-4 text-2xl font-bold text-gray-900">Reservation Received!</h2>
         <p className="mt-2 text-gray-mid">
-          Thanks for booking with Tote Movers. We&apos;ll confirm your delivery details within 24 hours via email.
+          Thanks for booking with MoverTotes. We&apos;ll confirm your delivery details within 24 hours via email.
         </p>
         <p className="mt-4 text-sm text-gray-500">
           Questions? Call us at <a href="tel:+12087712037" className="text-primary font-medium">(208) 771-2037</a>{" "}

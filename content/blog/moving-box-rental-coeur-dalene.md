@@ -15,7 +15,7 @@ keywords:
 
 Moving in Coeur d'Alene? You've got options — but if you're still thinking cardboard is the way to go, it's time to reconsider. **Moving box rental** in CdA has completely changed how locals pack up and move across town (or across the state line).
 
-Here at Tote Movers, we've helped hundreds of families, businesses, and realtors across Coeur d'Alene, Post Falls, Hayden, Rathdrum, and surrounding areas skip the cardboard chaos entirely.
+Here at MoverTotes, we've helped hundreds of families, businesses, and realtors across Coeur d'Alene, Post Falls, Hayden, Rathdrum, and surrounding areas skip the cardboard chaos entirely.
 
 ## The Problem with Cardboard Boxes
 

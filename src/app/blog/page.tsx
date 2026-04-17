@@ -3,7 +3,7 @@ import Link from "next/link";
 import { getAllPosts } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  title: "Moving Tips & Guides | Tote Movers Blog",
+  title: "Moving Tips & Guides | MoverTotes Blog",
   description:
     "Practical moving advice, local Coeur d'Alene guides, and everything you need to know about making your next move easier.",
 };
@@ -16,7 +16,7 @@ export default function BlogIndexPage() {
       {/* Hero */}
       <section className="bg-gradient-to-br from-primary to-primary-dark py-16 text-white sm:py-20">
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
-          <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl">The Tote Movers Blog</h1>
+          <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl">The MoverTotes Blog</h1>
           <p className="mt-4 text-lg text-white/80">
             Moving tips, local guides, and everything you need to make your next move easier.
           </p>
