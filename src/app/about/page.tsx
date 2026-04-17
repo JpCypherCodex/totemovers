@@ -113,7 +113,7 @@ export default function AboutPage() {
           <div className="mt-8 space-y-5 text-lg text-gray-700 leading-relaxed">
             <p>
               Where do you even <em>get</em> boxes? You&apos;re driving around town hitting up
-              grocery stores and liquor shops like some kind of cardboard scavenger hunt. Or
+              grocery stores like some kind of cardboard scavenger hunt. Or
               you&apos;re buying them — and seriously, have you seen what boxes cost these days?
               For something you&apos;re literally going to throw away.
             </p>
@@ -176,7 +176,7 @@ export default function AboutPage() {
             <p>
               A <strong className="text-white">Tote Mover</strong> is someone who&apos;s done with
               the old way. They&apos;re the kind of person who refuses to spend a Saturday
-              scavenging for boxes at the liquor store. Who stopped believing that a move
+              scavenging for boxes behind the grocery store. Who stopped believing that a move
               has to end with a garage full of flattened cardboard and a headache.
             </p>
             <p>
