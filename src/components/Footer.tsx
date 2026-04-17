@@ -21,6 +21,10 @@ export default function Footer() {
                 <a href="tel:+12087712037" className="hover:text-white">(208) 771-2037</a>
               </p>
               <p>
+                <span className="font-medium text-white">Email:</span>{" "}
+                <a href="mailto:hello@totemovers.com" className="hover:text-white">hello@totemovers.com</a>
+              </p>
+              <p>
                 <span className="font-medium text-white">Area:</span> Coeur d&apos;Alene, ID
               </p>
             </div>

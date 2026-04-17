@@ -39,9 +39,9 @@ export default function AboutPage() {
           </h2>
           <div className="mt-8 space-y-5 text-lg text-gray-700 leading-relaxed">
             <p>
-              Let me tell you something. Our family has moved <strong>five times</strong> right
+              Let me tell you something. Our family has moved <strong>five times</strong>{" "}right
               here in town. Five. And me — Josh, the husband, the dad, the guy who always ends
-              up carrying the heavy stuff — I&apos;ve personally moved <strong>eleven times</strong> in
+              up carrying the heavy stuff — I&apos;ve personally moved <strong>eleven times</strong>{" "}in
               the greater Coeur d&apos;Alene area.
             </p>
             <p>

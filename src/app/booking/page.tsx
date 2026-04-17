@@ -62,7 +62,8 @@ function BookingForm() {
           Thanks for booking with Tote Movers. We&apos;ll confirm your delivery details within 24 hours via email.
         </p>
         <p className="mt-4 text-sm text-gray-500">
-          Questions? Call us at <a href="tel:+12087712037" className="text-primary font-medium">(208) 771-2037</a>
+          Questions? Call us at <a href="tel:+12087712037" className="text-primary font-medium">(208) 771-2037</a>{" "}
+          or email <a href="mailto:hello@totemovers.com" className="text-primary font-medium">hello@totemovers.com</a>
         </p>
       </div>
     );
