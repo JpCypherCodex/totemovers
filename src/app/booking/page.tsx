@@ -137,7 +137,6 @@ function BookingForm() {
             <option>Hayden</option>
             <option>Rathdrum</option>
             <option>Dalton Gardens</option>
-            <option>Spirit Lake</option>
             <option>Other</option>
           </select>
         </div>

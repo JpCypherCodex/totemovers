@@ -5,7 +5,7 @@ import { useState } from "react";
 const faqs = [
   {
     q: "What areas do you deliver to?",
-    a: "We deliver throughout the greater Coeur d'Alene area, including Post Falls, Hayden, Rathdrum, Dalton Gardens, Spirit Lake, and surrounding communities in North Idaho. If you're unsure whether we cover your area, just reach out and we'll let you know!",
+    a: "We deliver throughout the greater Coeur d'Alene area, including Post Falls, Hayden, Rathdrum, Dalton Gardens, and surrounding communities in North Idaho. If you're unsure whether we cover your area, just reach out and we'll let you know!",
   },
   {
     q: "Do I need to clean the totes before pickup?",

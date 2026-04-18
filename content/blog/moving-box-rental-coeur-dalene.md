@@ -60,7 +60,6 @@ We deliver throughout the greater Coeur d'Alene area, including:
 - Hayden
 - Rathdrum
 - Dalton Gardens
-- Spirit Lake
 
 Not sure if we cover your area? Just [get in touch](/contact) — we probably do.
 

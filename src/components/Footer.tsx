@@ -52,7 +52,6 @@ export default function Footer() {
               <li>Hayden</li>
               <li>Rathdrum</li>
               <li>Dalton Gardens</li>
-              <li>Spirit Lake</li>
             </ul>
             <div className="mt-6 flex gap-3">
               <span className="inline-flex items-center rounded-full bg-primary/20 px-3 py-1 text-xs font-medium text-primary">

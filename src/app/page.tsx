@@ -59,7 +59,6 @@ export default function Home() {
               "Hayden",
               "Rathdrum",
               "Dalton Gardens",
-              "Spirit Lake",
             ],
             priceRange: "$119 - $399",
           }),
@@ -77,7 +76,7 @@ export default function Home() {
                 name: "What areas do you deliver to?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "We deliver throughout the greater Coeur d'Alene area, including Post Falls, Hayden, Rathdrum, Dalton Gardens, Spirit Lake, and surrounding communities.",
+                  text: "We deliver throughout the greater Coeur d'Alene area, including Post Falls, Hayden, Rathdrum, Dalton Gardens, and surrounding communities.",
                 },
               },
               {
