@@ -49,17 +49,15 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const isComingSoon = process.env.SITE_MODE === "coming_soon";
-
   return (
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        {!isComingSoon && <Header />}
+        <Header />
         <main className="flex-1">{children}</main>
-        {!isComingSoon && <Footer />}
+        <Footer />
         <GoogleAnalytics gaId="G-Z56815NSZ1" />
       </body>
     </html>
